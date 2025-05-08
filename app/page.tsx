@@ -8,6 +8,7 @@ import { HeroCarousel } from "@/components/home/hero-carousel"
 import { FeaturedSection } from "@/components/home/featured-section"
 import { TestimonialSection } from "@/components/home/testimonial-section"
 import { NewsletterSection } from "@/components/home/newsletter-section"
+import images from "@/public/images"
 
 export default function HomePage() {
   // Sample featured products data
@@ -59,7 +60,7 @@ export default function HomePage() {
     {
       id: "men",
       name: "Men",
-      image: "/placeholder.svg?height=300&width=300&text=Men",
+      image: images.mens,
       itemCount: 152,
     },
     {
@@ -88,7 +89,7 @@ export default function HomePage() {
       <HeroCarousel />
 
       {/* Categories Section */}
-      <section className="px-4 md:px-6">
+      <section className="px-8 md:px-20">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold tracking-tight">Shop by Category</h2>
           <Button variant="ghost" size="sm" asChild>
@@ -105,7 +106,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Products Section */}
-      <section className="px-4 md:px-6">
+      <section className="px-8 md:px-20">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold tracking-tight">Featured Products</h2>
           <Button variant="ghost" size="sm" asChild>

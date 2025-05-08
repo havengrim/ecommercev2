@@ -3,15 +3,16 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-
+import images from "@/public/images"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const slides = [
   {
     id: 1,
     title: "Summer Collection 2023",
     description: "Discover the latest trends for the season",
-    image: "/placeholder.svg?height=600&width=1200&text=Summer+Collection",
+    image: images.background1,
     cta: "Shop Now",
     link: "/products",
   },
@@ -53,7 +54,13 @@ export function HeroCarousel() {
         {slides.map((slide) => (
           <div key={slide.id} className="relative min-w-full">
             <div className="relative h-[60vh] w-full overflow-hidden">
-              <img src={slide.image || "/placeholder.svg"} alt={slide.title} className="h-full w-full object-cover" />
+            <Image
+              src={slide.image}
+              alt={slide.title}
+              fill
+              className="object-cover"
+              priority={slide.id === 1}
+            />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
             </div>
             <div className="absolute inset-0 flex flex-col items-start justify-center p-6 text-white md:p-12 lg:p-16">

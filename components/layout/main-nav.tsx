@@ -9,7 +9,7 @@ export function MainNav() {
   const pathname = usePathname()
 
   return (
-    <div className="mr-4 hidden md:flex">
+    <div className="mr-1 hidden md:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
         <ShoppingBag className="h-6 w-6" />
         <span className="hidden font-bold sm:inline-block">StyleShop</span>

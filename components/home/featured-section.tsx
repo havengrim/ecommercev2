@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 
 export function FeaturedSection() {
   return (
-    <section className="bg-muted py-12 md:py-16 lg:py-20">
-      <div className="container px-4 md:px-6">
+    <section className="bg-muted py-12 md:py-16 lg:py-20 w-full">
+      <div className="px-8 md:px-20">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
