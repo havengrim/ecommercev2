@@ -7,6 +7,7 @@ import { Separator } from "@/components/ui/separator"
 import { ProductGallery } from "@/components/products/product-gallery"
 import { ProductInfo } from "@/components/products/product-info"
 import { RelatedProducts } from "@/components/products/related-products"
+import images from "@/public/images"
 
 export const metadata: Metadata = {
   title: "Product Details | StyleShop",
@@ -23,10 +24,10 @@ export default function ProductPage({ params }: { params: { id: string } }) {
       "A comfortable and versatile white t-shirt made from 100% organic cotton. Perfect for everyday wear and easy to style with any outfit.",
     features: ["100% organic cotton", "Regular fit", "Crew neck", "Short sleeves", "Machine washable"],
     images: [
-      "/placeholder.svg?height=600&width=600&text=T-Shirt+Front",
-      "/placeholder.svg?height=600&width=600&text=T-Shirt+Back",
-      "/placeholder.svg?height=600&width=600&text=T-Shirt+Side",
-      "/placeholder.svg?height=600&width=600&text=T-Shirt+Detail",
+      images.whiteT.src,
+      images.white1.src,
+      images.white2.src,
+      images.white3.src,
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     colors: ["White", "Black", "Gray", "Blue"],

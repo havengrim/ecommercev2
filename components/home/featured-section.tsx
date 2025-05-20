@@ -1,6 +1,8 @@
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
+import images from "@/public/images"
+import Image from "next/image"
 
 export function FeaturedSection() {
   return (
@@ -22,10 +24,11 @@ export function FeaturedSection() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg">
-            <img
-              src="/placeholder.svg?height=400&width=600&text=Summer+Collection"
-              alt="Summer Collection"
-              className="h-full w-full object-cover"
+            
+            <Image 
+             src={images.hoodie}
+             alt="check"
+             className="h-full w-full object-cover"
             />
           </div>
         </div>

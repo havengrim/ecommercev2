@@ -8,13 +8,13 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useCart } from "@/components/cart/cart-provider"
 import { useToast } from "@/components/ui/use-toast"
-
+import { StaticImageData } from "next/image"
 interface ProductCardProps {
   product: {
     id: string
     name: string
     price: number
-    image: string
+    image: string | StaticImageData 
     category: string
     rating: number
     reviewCount: number
@@ -27,12 +27,13 @@ export function ProductCard({ product, className }: ProductCardProps) {
   const { addItem } = useCart()
   const { toast } = useToast()
 
+   const imageSrc = typeof product.image === "string" ? product.image : product.image.src
   const handleAddToCart = () => {
     addItem({
       id: product.id,
       name: product.name,
       price: product.price,
-      image: product.image,
+      image: imageSrc,
       quantity: 1,
     })
 
@@ -56,7 +57,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
         </Button>
         <div className="aspect-square overflow-hidden">
           <img
-            src={product.image || "/placeholder.svg"}
+            src={imageSrc || "/placeholder.svg"} // ✅ must be a string
             alt={product.name}
             className="h-full w-full object-cover transition-transform group-hover:scale-105"
           />

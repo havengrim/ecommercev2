@@ -3,12 +3,12 @@
 import type React from "react"
 
 import { createContext, useContext, useState, useEffect } from "react"
-
+import { StaticImageData } from "next/image"
 export type CartItem = {
   id: string
   name: string
   price: number
-  image: string
+  image: string | StaticImageData
   quantity: number
   size?: string
   color?: string

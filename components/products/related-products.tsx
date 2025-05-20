@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/products/product-card"
+import images from "@/public/images"
 
 export function RelatedProducts() {
   // Sample related products data
@@ -11,7 +12,7 @@ export function RelatedProducts() {
       id: "2",
       name: "Slim Fit Jeans",
       price: 59.99,
-      image: "/placeholder.svg?height=400&width=300&text=Jeans",
+      image: images.slim,
       category: "Men",
       rating: 4.2,
       reviewCount: 85,
@@ -21,7 +22,7 @@ export function RelatedProducts() {
       id: "5",
       name: "Casual Sneakers",
       price: 69.99,
-      image: "/placeholder.svg?height=400&width=300&text=Sneakers",
+      image: images.casual,
       category: "Footwear",
       rating: 4.4,
       reviewCount: 78,
@@ -31,7 +32,7 @@ export function RelatedProducts() {
       id: "6",
       name: "Denim Jacket",
       price: 89.99,
-      image: "/placeholder.svg?height=400&width=300&text=Jacket",
+      image: images.denim,
       category: "Men",
       rating: 4.7,
       reviewCount: 112,
@@ -41,7 +42,7 @@ export function RelatedProducts() {
       id: "8",
       name: "Aviator Sunglasses",
       price: 35.99,
-      image: "/placeholder.svg?height=400&width=300&text=Sunglasses",
+      image: images.glass,
       category: "Accessories",
       rating: 4.5,
       reviewCount: 89,
