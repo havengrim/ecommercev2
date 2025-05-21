@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 export function SiteFooter() {
   return (
     <footer className="border-t bg-background">
-      <div className="container px-4 py-12 md:px-6 lg:py-16">
+      <div className=" px-8 py-12 md:px-20 lg:py-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           <div className="space-y-4">
             <h3 className="text-lg font-medium">StyleShop</h3>

@@ -94,7 +94,7 @@ export default function ProductsPage() {
   ]
 
   return (
-    <div className="px-4 py-8 md:px-6 md:py-12">
+    <div className="px-9 py-8 md:px-20 md:py-12">
       <div className="flex flex-col space-y-4 md:space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">All Products</h1>

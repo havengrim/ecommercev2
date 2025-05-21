@@ -27,7 +27,7 @@ export function NewsletterSection() {
 
   return (
     <section className="bg-muted py-12 md:py-16">
-      <div className="container px-4 md:px-6">
+      <div className=" px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Join Our Newsletter</h2>

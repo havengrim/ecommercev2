@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function CheckoutPage() {
   return (
-    <div className="container px-4 py-8 md:px-6 md:py-12">
+    <div className="px-8 py-8 md:px-20 md:py-12">
       <div className="mb-8">
         <Button variant="ghost" size="sm" asChild className="mb-4">
           <Link href="/cart" className="flex items-center gap-1">

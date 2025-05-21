@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function CheckoutSuccessPage() {
   return (
-    <div className="container flex flex-col items-center justify-center px-4 py-16 md:px-6 md:py-24">
+    <div className=" flex flex-col items-center justify-center px-4 py-16 md:px-6 md:py-24">
       <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/20">
         <Check className="h-10 w-10 text-primary" />
       </div>
