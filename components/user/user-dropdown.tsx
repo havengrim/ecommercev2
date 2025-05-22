@@ -54,7 +54,7 @@ export function UserDropdown() {
               <Link href="/login">Sign in</Link>
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
-              <Link href="/register">Create account</Link>
+              <Link href="/signup">Create account</Link>
             </DropdownMenuItem>
           </>
         )}
